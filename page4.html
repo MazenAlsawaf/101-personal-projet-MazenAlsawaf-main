@@ -1,0 +1,91 @@
+<!-- The page was created by Mazen Alsawaf 
+      Contact / 08.03.2023 -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Head: Nom de la page, documents et fichiers liés -->
+
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/page4.css">
+  <script src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+
+<!-- Body(onload: Pour afficher l'heure actuelle) -->
+
+<body onload="displayDateTime()">
+
+  <!--Barre de navigation-->
+  <nav class="navbar">
+    <div class="navbar-links">
+      <ul>
+        <li class="test">
+          <p id="date"></p>
+        </li>
+        <li><a href="index.html">Page d'accueil</a></li>
+        <li><a href="page1.html">Nourriture</a></li>
+        <li><a href="page2.html">Recettes</a></li>
+        <li><a href="page3.html">Qui suis-je? </a></li>
+        <li><a href="page4.html">Contact</a></li>
+        <li> <input id="Searchbar" type="text" placeholder="Search.."></li>
+        <li>
+          <p class="date"></p>
+        </li>
+        <li>
+          <div class="logo"><a href="index.html"><img src="images/Homepage/Logo.png" alt="Logo"></a></div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <!-- informations personnelles -->
+    <div class="personalInfo">
+      <p class="info">Maysoun Alsafadi <span class="material-symbols-outlined">
+          person
+        </span></p>
+      <p class="info">maysounalsafadi@gmail.com <span class="material-symbols-outlined">
+          mail
+        </span></p>
+      <p class="info">+41 76 539 66 01 <span class="material-symbols-outlined">
+          call
+        </span></p>
+      <p class="info">Büntenweg 6b, 3212 Gurmels<span class="material-symbols-outlined">
+          location_on
+        </span></p>
+    </div>
+
+    <!-- Formulaire de contact -->
+    <form>
+      <h1>Formulaire de contact</h1>
+      <input type="text" id="firstName" placeholder="Prénom" required>
+      <input type="text" id="lastName" placeholder="Nom" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="text" id="mobile" placeholder="Numéro de portable" required>
+      <h4>Tapez votre message ici...</h4>
+      <textarea required></textarea>
+      <input type="submit" value="Envoyer" id="button">
+    </form>
+
+    <!-- Goggle map -->
+  </div>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1363.2250831592207!2d7.175302656497866!3d46.89386447558729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e6b5e5c404521%3A0x8e9b3852e7e7ec9f!2sB%C3%BCntenweg%2C%203212%20Gurmels!5e0!3m2!1sde!2sch!4v1674045862726!5m2!1sde!2sch"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+
+</body>
+
+</html>

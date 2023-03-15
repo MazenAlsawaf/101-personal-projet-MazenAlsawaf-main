@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+/* police de caractères */
+@font-face {
+  font-family: "Cabin";
+  src: url(../Font/Cabin/static/Cabin/Cabin-Bold.ttf);
+}
+
+/* body (Défini dans toute la page)  */
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../images/Homepage/Background.png");
+  font-family: "Cabin";
+  min-height: 100vh;
+}
+
+/*  classe du menu principal */
+.navbar {
+  background-color: #000;
+  padding: 10px;
+  width: 100%;
+}
+
+
+/* classe de la création de listes */
+.navbar-links ul {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* les listes */
+.navbar-links li {
+  list-style: none;
+  transition: 200ms;
+}
+
+/* style de liste de noms */
+.navbar-links li a {
+  text-decoration: none;
+  color: #bd973c;
+  padding: 15px;
+  font-weight: bold;
+  align-items: center;
+  font-size: 20px;
+  transition: 200ms;
+  width: 150px;
+}
+
+/* listes hover */
+.navbar-links li:hover {
+  text-transform: uppercase;
+  transition: 200ms;
+}
+
+/* style de logo */
+.logo img {
+  position: relative;
+  margin-left: 15px;
+  width: 75px;
+  border: 5px solid #0000;
+}
+
+/* style de barre de recherche */
+#Searchbar {
+  border-radius: 10px;
+  margin-left: 5px;
+  position: relative;
+  width: 270px;
+  height: 40px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+
+/* l'heure */
+#date {
+  color: #bd973c;
+  align-items: left;
+  margin-right: 280px;
+}
+
+
+
+/* media all */
+@media all and (max-width: 1800px) {
+  #date {
+    margin-right: 120px;
+  }
+
+  @media all and (max-width: 1600px) {
+    #date {
+
+      margin-right: 20px;
+    }
+  }
+
+  @media all and (max-width: 1400px) {
+    #date {
+      margin-right: 150px;
+      display: none;
+    }
+
+    #Searchbar {
+      display: none;
+    }
+
+  }
+
+  @media all and (max-width: 1100px) {
+    .navbar-links ul {
+      display: grid;
+    }
+
+    .navbar-links li a {
+      font-weight: bold;
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .navbar-links li:hover {
+      text-transform: uppercase;
+      background-color: aliceblue;
+    }
+
+    #Searchbar {
+      display: none;
+    }
+
+    .date {
+
+      display: none;
+    }
+
+    .logo img {
+      display: none;
+    }
+  }
+}
